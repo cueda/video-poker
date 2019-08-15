@@ -1,7 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// Manages button triggers for UI elements.
+/// Should be attached to a GameObject, then GameObject should be attached to buttons to reference functions here.
+/// Effectively a interface for input.
+/// 
+/// Video Poker for Unity
+/// by Christopher Ueda, 2019
 public class ButtonManager : MonoBehaviour
 {
     // Function name starts from 1, logical index starts from 0

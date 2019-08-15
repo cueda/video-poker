@@ -1,7 +1,11 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// The main mega-object for game logic.
+/// Primarily keeps track of game state (betting, dealing, holding, redealing, payout) and holds global game values.
+/// 
+/// Video Poker for Unity
+/// by Christopher Ueda, 2019
 public class GameManager : MonoBehaviour
 {
     [SerializeField]

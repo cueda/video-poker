@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System;
-using UnityEngine;
+﻿using System;
 
+/// Handles winning hand representation and their calculations off of a five-or-less card hand.
+/// 
+/// Video Poker for Unity
+/// by Christopher Ueda, 2019
 public class PokerHands
 {
     public enum Hands

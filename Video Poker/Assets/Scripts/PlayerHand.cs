@@ -1,8 +1,12 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
+/// Represents a single hand consisting of five cards.
+/// (HAND_SIZE could be modified but the application won't magically handle more cards)
+/// Designed to be easily adapted to multi-hand poker.
+/// 
+/// Video Poker for Unity
+/// by Christopher Ueda, 2019
 public class PlayerHand : MonoBehaviour
 {
     public PokerHands.Hands handValue { get; private set; }

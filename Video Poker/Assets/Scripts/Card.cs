@@ -1,8 +1,13 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
+/// <summary>
+/// Represents a card as a single Rank and Suit enum.
+/// Includes a comparator for rank-sorting and suit-sorting.
+/// 
+/// Video Poker for Unity
+/// by Christopher Ueda, 2019
+/// </summary>
 public class Card : IComparable
 {
     public Rank rank { get; }

@@ -1,7 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// Represents a 52-card deck, which is shuffled on creation
+/// Singleton can be referenced by Deck.Instance
+/// Deal cards with Deck.DealCard() and shuffle with ShuffleDeck()
+/// 
+/// Video Poker for Unity
+/// by Christopher Ueda, 2019
 public class Deck
 {
     // Singleton deck - refer to instance to use this object

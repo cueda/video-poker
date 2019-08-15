@@ -1,8 +1,12 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// Manages the UI (who'd have thought?) and handles animation for bet/credits and card dealing.
+/// Actually controls some game logic timings as some animations need to finish before changing game states.
+/// 
+/// Video Poker for Unity
+/// by Christopher Ueda, 2019
 public class UIManager : MonoBehaviour
 {
     // Image component of each UI element (put the five card displays in ascending order)

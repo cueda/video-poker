@@ -1,8 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
+﻿using System;
 
+/// Eventing system for Video Poker game.
+/// Broadcasts events when called anywhere in the application.
+/// Functions can be added to these delegates to be called at the appropriate time
+/// (but timing is not guaranteed)
+/// 
+/// Video Poker for Unity
+/// by Christopher Ueda, 2019
 public class EventManager
 {
     public static class Game

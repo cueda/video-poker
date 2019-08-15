@@ -1,7 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// DebugObject component should be attached to a GameObject in scene.
+/// Set DEBUG_MODE to true and populate debugCardRanks and debugCardSuits to replace the first X cards of Deck.cs's cards.
+/// 
+/// Video Poker for Unity
+/// by Christopher Ueda, 2019
+/// </summary>
 public class DebugObject : MonoBehaviour
 {
     // Set to TRUE to disable shuffling and ability to manually set cards on startup
