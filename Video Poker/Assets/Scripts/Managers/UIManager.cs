@@ -165,6 +165,7 @@ public class UIManager : MonoBehaviour
             winCounter++;
             UpdateCreditText(curDisplay);
             winText.text = "WIN " + winCounter;
+            EventManager.Animation.OnOneCreditPayoutAnimated?.Invoke();
         }
 
         EventManager.Animation.OnPayoutAnimComplete?.Invoke();
@@ -254,6 +255,7 @@ public class UIManager : MonoBehaviour
                         Debug.LogError("Card does not fit any of the four default suits.");
                         break;
                 }
+                EventManager.Animation.OnOneCardDrawAnimated?.Invoke();
             }
         }
         EventManager.Animation.OnDealAnimComplete?.Invoke();

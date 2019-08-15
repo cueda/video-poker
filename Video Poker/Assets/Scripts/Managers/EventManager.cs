@@ -25,28 +25,34 @@ public class EventManager
     public static class Card
     {
         // Card index drawn (0-4)
-        public static Action<int> OnCardDrawn;
         public static Action<int> OnCardHeld;
     }
 
 
     public static class Animation
     {
+        // Old credits value, new credits value
         public static Action<int, int> OnStartAnimatePayout;
         public static Action OnDealAnimComplete;
         public static Action OnPayoutAnimComplete;
+
+        public static Action OnOneCardDrawAnimated;
+        public static Action OnOneCreditPayoutAnimated;
     }
 
 
     public static class Credits
     {
+        // Old credits value, new credits value
         public static Action<int, int> OnBetPlaced;
+        // Old bet value, new bet value
         public static Action<int, int> OnCurrentBetValueChanged;
     }
 
 
     public static class Input
     {
+        // Button index (0-4)
         public static Action<int> OnHoldButtonPressed;
         public static Action OnAddBetOneButtonPressed;
         public static Action OnAddBetMaxButtonPressed;
